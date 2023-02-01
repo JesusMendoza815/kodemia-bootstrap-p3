@@ -15,8 +15,8 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-white w-100">
+    <header class="container-fluid bg-white position-sticky top-0 z-1">
+      <nav class="navbar navbar-expand-lg w-100">
         <div class="container m-lg-auto w-100">
           <a class="navbar-brand" href="#">
             <img src="/images/logo.svg" alt="logo-icon">
@@ -39,15 +39,16 @@
     </header>
 
     <!-- MAIN -->
-    <main class="container-fluid p-0 position-relative mb-5 min-vh-100 d-lg-flex flex-lg-row-reverse align-items-center">
+    <img class="position-absolute custom__img-mockup" src="/images/image-mockups.png" alt="mockups">
+    <main class="container-fluid bg-light z-n1 p-0 position-relative mb-5 min-vh-100 d-lg-flex flex-lg-row-reverse align-items-center">
       <picture>
         <img class="w-100 position-relative hero d-lg-none" src="/images/bg-intro-mobile.svg" alt="hero">
         <img class="position-absolute hero-lg d-none d-lg-block" src="/images/bg-intro-desktop.svg" alt="hero">
-        <img class="position-absolute custom__img-mockup" src="/images/image-mockups.png" alt="mockups">
+
       </picture>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-6 text-center">
+          <div class="col-12 col-lg-6 offset-lg-1 text-center">
             <h1 class="mx-auto">Next generation digital banking</h1>
             <p class="text-black-50">Take your financial life online. Your EasyBank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more</p>
             <a class="btn custom-bg text-white rounded-pill px-4 py-2" href="#">Request Invite</a>
@@ -57,7 +58,7 @@
     </main>
 
     <!-- INFO SECTION -->
-    <section class="container-fluid bg-light text-center min-vh-100 py-5 pb-lg-2">
+    <section class="container-fluid bg-white text-center min-vh-100 py-5 pb-lg-2">
       <div class="container">
         <div class="row pb-5">
           <h2 class="w-50 mx-auto">Why choose EasyBank</h2>
@@ -67,7 +68,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-3">
-            <div class="card bg-light border-0">
+            <div class="card bg-white border-0">
               <img src="/images/icon-online.svg" class="m-auto custom__icon-card" alt="icon">
               <div class="card-body">
                 <h5 class="card-title">Online Banking</h5>
@@ -77,7 +78,7 @@
           </div>
 
           <div class="col-12 col-lg-3">
-            <div class="card bg-light border-0">
+            <div class="card bg-white border-0">
               <img src="/images/icon-budgeting.svg" class="m-auto custom__icon-card" alt="icon">
               <div class="card-body">
                 <h5 class="card-title">Simple Budgeting</h5>
@@ -87,7 +88,7 @@
           </div>
 
           <div class="col-12 col-lg-3">
-            <div class="card bg-light border-0">
+            <div class="card bg-white border-0">
               <img src="/images/icon-onboarding.svg" class="m-auto custom__icon-card" alt="icon">
               <div class="card-body">
                 <h5 class="card-title">Fast Onboarding</h5>
@@ -97,7 +98,7 @@
           </div>
 
           <div class="col-12 col-lg-3">
-            <div class="card bg-light border-0">
+            <div class="card bg-white border-0">
               <img src="/images/icon-api.svg" class="m-auto custom__icon-card" alt="icon">
               <div class="card-body">
                 <h5 class="card-title">Open Api</h5>
@@ -110,9 +111,9 @@
     </section>
 
     <!-- SECTION ARTICLES -->
-    <section class="container-fluid bg-white min-vh-100 py-5 pt-lg-2">
+    <section class="container-fluid bg-light min-vh-100 py-5 pt-lg-2">
       <div class="container">
-        <h2>Latest Articles</h2>
+        <h2 class="my-4">Latest Articles</h2>
         <div class="row">
           <div class="col-12 col-lg-3">
             <div class="card bg-light border-0 shadow-sm my-4 h-100">
@@ -167,14 +168,14 @@
         <div class="row g-3 d-lg-flex justify-content-between">
           <div class="col-12 col-lg-4">
             <picture>
-              <img class="footer__logo my-3 object-fit-contain" src="/images/logo.svg" alt="logo">
+              <img class="footer__logo my-3 ms-lg-2 object-fit-contain" src="/images/logo-white.svg" alt="logo">
             </picture>
             <div class="footer__icons my-3">
-              <i class="mx-2"><img src="/images/icon-facebook.svg" alt="footer-icon"></i>
-              <i class="mx-2"><img src="/images/icon-youtube.svg" alt="footer-icon"></i>
-              <i class="mx-2"><img src="/images/icon-twitter.svg" alt="footer-icon"></i>
-              <i class="mx-2"><img src="/images/icon-pinterest.svg" alt="footer-icon"></i>
-              <i class="mx-2"><img src="/images/icon-instagram.svg" alt="footer-icon"></i>
+              <i class="mx-2 footer__icon icon1"></i>
+              <i class="mx-2 footer__icon icon2"></i>
+              <i class="mx-2 footer__icon icon3"></i>
+              <i class="mx-2 footer__icon icon4"></i>
+              <i class="mx-2 footer__icon icon5"></i>
             </div>
           </div>
           <div class="col-12 col-lg-5">

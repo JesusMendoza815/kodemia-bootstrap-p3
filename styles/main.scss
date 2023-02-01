@@ -9,6 +9,28 @@ $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
+// CUSTOM CLASS
+.custom-bg {
+  background: linear-gradient(to right, $limeGreen, $brightCyan) !important;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.custom__hover--text-green {
+  &:hover {
+    color: $limeGreen;
+  }
+}
+
+.custom__img-card {
+  height: 11rem;
+  object-fit: cover;
+}
+
 * {
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
@@ -18,6 +40,7 @@ $white: hsl(0, 0%, 100%);
 
 body {
   margin: 0;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -37,13 +60,7 @@ main {
   overflow-x: hidden !important;
   picture {
     .hero {
-      z-index: -2;
-    }
-    .custom__img-mockup {
-      top: -12%;
-      width: 90%;
       z-index: -1;
-      left: 5%;
     }
   }
   h1 {
@@ -58,17 +75,21 @@ main {
         top: -30%;
         right: -15%;
         z-index: -2;
-      }      
-      .custom__img-mockup {
-        top: -20%;
-        width: 48%;
-        z-index: -1;
-        left: 57%;
       }
     }
   }
 }
 
+.custom__img-mockup {
+  top: -12%;
+  width: 90%;
+  left: 5%;
+  @media screen and (min-width: 992px) {
+    top: -10%;
+    width: 55%;
+    left: 54%;
+  }
+}
 
 .custom__icon-card {
   width: 5rem;
@@ -77,34 +98,37 @@ main {
 
 footer {
   background-color: #2d314e;
-
-  img.footer__logo {
-    height: 1.5rem;
+  img {
+    &.footer__logo {
+      height: 1.6rem;
+    }
   }
-
-  i > img {
-    width: 1.7rem;
-    height: 1.7rem;
+  div {
+    i {
+      &.footer__icon {
+        display: inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        background-color: white;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        &.icon1 {
+          mask-image: url(/images/icon-facebook.svg);
+        }
+        &.icon2 {
+          mask-image: url(/images/icon-youtube.svg);
+        }
+        &.icon3 {
+          mask-image: url(/images/icon-twitter.svg);
+        }
+        &.icon4 {
+          mask-image: url(/images/icon-pinterest.svg);
+        }
+        &.icon5 {
+          mask-image: url(/images/icon-instagram.svg);
+        }
+      }
+    }
   }
-}
-
-.custom-bg {
-  background: linear-gradient(to right, $limeGreen, $brightCyan) !important;
-  font-size: 1rem;
-  font-weight: 700;
-
-  &:hover {
-    opacity: .7;
-  }
-}
-
-.custom__hover--text-green {
-  &:hover {
-    color: $limeGreen;
-  }
-}
-
-.custom__img-card {
-  height: 11rem;
-  object-fit: cover;
 }
