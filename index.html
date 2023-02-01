@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica Bootstrap5 3</title>
+    <!-- Bootstrpa -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-white w-100">
+        <div class="container m-lg-auto w-100">
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.svg" alt="logo-icon">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav m-auto">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Carrers</a>
+            </div>
+            <a class="nav-link btn custom-bg text-white rounded-pill px-4 py-2" href="#">Request Invite</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container-fluid p-0 position-relative mb-5 min-vh-100 d-lg-flex flex-lg-row-reverse align-items-center">
+      <picture>
+        <img class="w-100 position-relative hero d-lg-none" src="/images/bg-intro-mobile.svg" alt="hero">
+        <img class="position-absolute hero-lg d-none d-lg-block" src="/images/bg-intro-desktop.svg" alt="hero">
+        <img class="position-absolute custom__img-mockup" src="/images/image-mockups.png" alt="mockups">
+      </picture>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 text-center">
+            <h1 class="mx-auto">Next generation digital banking</h1>
+            <p class="text-black-50">Take your financial life online. Your EasyBank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more</p>
+            <a class="btn custom-bg text-white rounded-pill px-4 py-2" href="#">Request Invite</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- INFO SECTION -->
+    <section class="container-fluid bg-light text-center min-vh-100 py-5 pb-lg-2">
+      <div class="container">
+        <div class="row pb-5">
+          <h2 class="w-50 mx-auto">Why choose EasyBank</h2>
+          <p class="text-black-50">We leverage Open Bank to turn your bank acccount into your financial hub.
+            Control your finances like never
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0">
+              <img src="/images/icon-online.svg" class="m-auto custom__icon-card" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title">Online Banking</h5>
+                <p class="card-text text-black-50">Our model web and mobiles applications allow you to keep track of your finances wherever you are in the world</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0">
+              <img src="/images/icon-budgeting.svg" class="m-auto custom__icon-card" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title">Simple Budgeting</h5>
+                <p class="card-text text-black-50">See exactly where your money goes each month. Receive notifications when you're close to your hitting limits</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0">
+              <img src="/images/icon-onboarding.svg" class="m-auto custom__icon-card" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title">Fast Onboarding</h5>
+                <p class="card-text text-black-50">We don't do branches, Open your account in minutes online and start taking control of your finances right away</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0">
+              <img src="/images/icon-api.svg" class="m-auto custom__icon-card" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title">Open Api</h5>
+                <p class="card-text text-black-50">Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ARTICLES -->
+    <section class="container-fluid bg-white min-vh-100 py-5 pt-lg-2">
+      <div class="container">
+        <h2>Latest Articles</h2>
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0 shadow-sm my-4 h-100">
+              <img src="/images/image-currency.jpg" class="card-img-top m-auto custom__img-card" alt="img-article">
+              <div class="card-body">
+                <small class="text-black-50">By Claire Robinson</small>
+                <h5 class="card-title my-2">Receive money in any currency with no fees</h5>
+                <p class="card-text text-black-50">The world is getting smaller and we're becoming more mobile. So why should you be forced to only reiceive money in a single</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0 shadow-sm my-4 h-100">
+              <img src="/images/image-restaurant.jpg" class="card-img-top m-auto custom__img-card" alt="img-article">
+              <div class="card-body">
+                <small class="text-black-50">By Wilson Hutton</small>
+                <h5 class="card-title my-2">Treat yourself without worrying about money</h5>
+                <p class="card-text text-black-50">Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. Thats means you...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0 shadow-sm my-4 h-100">
+              <img src="/images/image-plane.jpg" class="card-img-top m-auto custom__img-card" alt="img-article">
+              <div class="card-body">
+                <small class="text-black-50">By Wilson Hutton</small>
+                <h5 class="card-title my-2">Take your EasyBank wherever you go</h5>
+                <p class="card-text text-black-50">We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad. We'll even show you...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="card bg-light border-0 shadow-sm my-4 h-100">
+              <img src="/images/image-confetti.jpg" class="card-img-top m-auto custom__img-card" alt="img-article">
+              <div class="card-body">
+                <small class="text-black-50">By Claire Robinson</small>
+                <h5 class="card-title my-2">Our invite-only Beta accounts are now live</h5>
+                <p class="card-text text-black-50">After a lot of hard work by whole team, we're excited to launch our closed beta, It's easy to request an invite through the site</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="container-fluid py-5">
+      <div class="container text-center text-white text-lg-start">
+        <div class="row g-3 d-lg-flex justify-content-between">
+          <div class="col-12 col-lg-4">
+            <picture>
+              <img class="footer__logo my-3 object-fit-contain" src="/images/logo.svg" alt="logo">
+            </picture>
+            <div class="footer__icons my-3">
+              <i class="mx-2"><img src="/images/icon-facebook.svg" alt="footer-icon"></i>
+              <i class="mx-2"><img src="/images/icon-youtube.svg" alt="footer-icon"></i>
+              <i class="mx-2"><img src="/images/icon-twitter.svg" alt="footer-icon"></i>
+              <i class="mx-2"><img src="/images/icon-pinterest.svg" alt="footer-icon"></i>
+              <i class="mx-2"><img src="/images/icon-instagram.svg" alt="footer-icon"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <ul class="navbar-nav d-lg-inline-block ms-lg-3 me-lg-5">
+              <li class="nav-item">
+                <a class="nav-link custom__hover--text-green" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom__hover--text-green" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom__hover--text-green" href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-lg-inline-block ms-lg-5">
+              <li class="nav-item">
+                <a class="nav-link custom__hover--text-green" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom__hover--text-green" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom__hover--text-green" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 text-lg-end">
+            <a class="btn custom-bg text-white rounded-pill px-4 py-2 my-3 ms-lg-" href="#">Request Invite</a>
+            <small class="text-white-50 mb-3 d-block">© Easybank. All Rights Reserved</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
